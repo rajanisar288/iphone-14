@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/setting.css">
     <title>Iphone 14 </title>
 </head>
 <body>
@@ -38,8 +39,8 @@
                                 <div class="completeDate"></div>
                             </div>
                             <div class="mainMenu">
-                                <ul>
-                                    <li><img src="./assets/video.png" alt=""><span>FaceTime</span></li>
+                                <ul id="menu">
+                                    <li *list-name="faceTime"><img src="./assets/video.png" alt=""><span>FaceTime</span></li>
                                     <li><img src="./assets/calender.png" alt=""></li>
                                     <li><img src="./assets/photos.avif" alt=""></li>
                                     <li><img  src="./assets/camera.jpg" alt=""></li>
@@ -54,7 +55,7 @@
                                     <li><img src="./assets/map.png" alt=""></li>
                                     <li><img src="./assets/health.png" alt=""></li>
                                     <li><img src="./assets/wallet.png" alt=""></li>
-                                    <li><img src="./assets/setting.png" alt=""></li>
+                                    <li *list-name="setting"><img src="./assets/setting.png" alt=""></li>
                                 </ul>
                             </div>
                         </div>
@@ -68,13 +69,31 @@
                         </ul>
                     </div>
 
+                    <!-- tab -->
+                    <div class="setting hide tab">
+                        <div class="settingWrapper">
+                            <div class="settingHeader">
+                                <div class="headingTitle">Setting</div>
+                            </div>
+                            <div class="settingScreen">
+                                <div class="settingSearch">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+
+                            </div>
+                            <div class="settingbottom">
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- tabs end -->
+
                 </div>
             </div>
 
         </div>
       </div>
 
-    <script src="index.js" >
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>

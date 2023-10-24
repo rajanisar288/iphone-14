@@ -32,6 +32,18 @@ function checkTime(){
   setInterval(checkTime, 500);
 
 
+  //add event listeners on menu 
+var menu = document.querySelectorAll('#menu li')
+menu.forEach((menuItem)=> {
+  menuItem.addEventListener('click' , (e)=>{
+  var tab = document.getElementsByClassName(menuItem.getAttribute("*list-name"))
+    tab[0].classList.remove('hide')
+  })
+})
+
+
+
+
   //Weather logic
   /*SEARCH BY USING A CITY NAME (e.g. athens) OR A COMMA-SEPARATED CITY NAME ALONG WITH THE COUNTRY CODE (e.g. athens,gr)*/
 const form = document.querySelector(".top-banner form");
@@ -115,3 +127,4 @@ function weatherData(CityNama){
   input.focus();
 }
 weatherData('karachi')
+
