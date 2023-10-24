@@ -1,50 +1,49 @@
-.settingWrapper{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    /* background: red; */
-    position: relative;
-    box-sizing: border-box;
+.settingWrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  /* background: red; */
+  position: relative;
+  box-sizing: border-box;
 }
-.settingWrapper .settingHeader{
-    width: 100%;
-    height: 72px;
-    background: rgba( 255, 255, 255, 0.45 );
-backdrop-filter: blur( 1.5px );
--webkit-backdrop-filter: blur( 1.5px );
-    border-bottom: 1px solid #00000038;
-    display: flex;
-    justify-content: center;
-    position: relative;
+.settingWrapper .settingHeader {
+  width: 100%;
+  height: 72px;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border-bottom: 1px solid #00000038;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
-.settingWrapper .settingHeader .headingTitle{
-    position: absolute;
-    bottom: 0;
-    padding-bottom: 5px;
-    font-weight: 700;
+.settingWrapper .settingHeader .headingTitle {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 5px;
+  font-weight: 700;
 }
 
-.settingbottom{
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 14px ;
-    /* background: orange; */
+.settingbottom {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 14px;
+  /* background: orange; */
 }
-.settingbottom div.line{
-width: 40%;
-height: 6px;
-background: black;
-border-radius: 4px;
+.settingbottom div.line {
+  width: 40%;
+  height: 6px;
+  background: black;
+  border-radius: 4px;
 }
-.settingScreen{
-    width: 94%;
-    height: 85%;
-    background-color: red;
-    position: absolute;
-    margin-left: 3%;
-    top: 80px;
+.settingScreen {
+  width: 94%;
+  height: 85%;
+  position: absolute;
+  margin-left: 3%;
+  top: 80px;
 }
